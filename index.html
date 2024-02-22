@@ -244,6 +244,97 @@
     </div>
 </section>
 <!--end of testimonial section-->
+
+<!--video section-->
+<section id = "video">
+    <div class = "video-wrapper flex">
+        <video loop>
+            <source src = "videos/video-section.mp4" type = "video/mp4">
+        </video>
+        <button type = "button" id = "play-btn">
+            <i class= "fas fa-play"></i>
+        </button>
+    </div>
+</section>
+<!--end of video section-->
+
+<!--footer-->
+<footer class = "py-4">
+    <div class = "container footer-row">
+        <div class = "footer-item">
+            <a href = "index.html" class = "site-brand">
+                Trip<span>Boss</span>
+            </a>
+            <p class = "text"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate nemo quisquam ullam omnis ipsa aliquam sint reprehenderit fuga veniam. Nobis a dolor quia, debitis sapiente necessitatibus obcaecati expedita iure et!</p>    
+        </div>
+
+        <div class = "footer-item">
+            <h2> Follow us on:</h2>
+            <ul class = "social-links">
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-facebook-f"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-pinterest"></i>
+                    </a>
+                </li>
+                <li>
+                    <a href = "#">
+                        <i class = "fab fa-google-plus"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class = "footer-item">
+            <h2> Popular places: </h2>
+            <ul>
+                <li> <a href = "#"> Thailand</a></li>
+                <li> <a href = "#"> Australia</a></li>
+                <li> <a href = "#"> Maldives</a></li>
+                <li> <a href = "#"> Switzerland</a></li>
+                <li> <a href = "#"> Germany</a></li>
+            </ul>
+        </div>
+
+        <div class = "subscribe-form footer-item">
+            <h2> Subscribe for Newsletters!</h2>
+            <form class = "flex">
+                <input type = "email" placeholder = "Enter Email" class = "form-control">
+                <input type = "submit" class = "btn" value = "Subscribe">
+            </form>
+        </div>
+    </div>
+</footer>
+<!--end of footer-->
+
+
+
+<!--js-->
       <script src= "js/script.js" ></script>
+      <script>
+        //play/pause video
+        let video = document.querySelector('.video-wrapper video');
+        document.getElementById('play-btn');
+        addEventListener('click', () => {
+            if(video.paused){
+                video.play();
+            } else {
+                video.pause();
+            }
+        });
+      </script>
     </body>
 </html> 
