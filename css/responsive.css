@@ -45,6 +45,15 @@
  .subscribe-form form{
     align-items: flex-start;
  }
+
+ .gallery-row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+ }
+ .gallery-item{
+    margin: 0;
+ }
 } 
 @media screen and (min-width: 992px) {
     .header-title h1{
@@ -93,8 +102,8 @@
      }
 }
 
-@media screen and(min-width: 1200px) {
-    .test-row{
+@media screen and (min-width: 1200px) {
+    .test-row, .gallery-row{
         grid-template-columns: repeat(3, 1fr);
     }
     .footer-row{
@@ -102,7 +111,7 @@
     }
 }
     
-@media screen and(min-width: 1400px){
+@media screen and (min-width: 1400px){
     .featured-row, .services-row{
         grid-template-columns: repeat(3, 1fr);
     }
