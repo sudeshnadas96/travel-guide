@@ -485,3 +485,46 @@ header.header-sm{
     background-color: var(--dark);
     color: #fff;
 }
+
+/* popular section */
+#popular.py-4{
+    padding-bottom: 0;
+}
+.popular-item{
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--trans);
+}
+.popular-item::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: linear-gradient(to bottom, transparent 0%, transparent 18%, rgba(0,0,0,0.8)99%, rgba(0,0,0,0.8)100%);
+}
+.popular-item div{
+    position: absolute;
+    color: #fff;
+    z-index: 2;
+    bottom: -100%;
+    width: 100%;
+    padding: 2rem;
+    transition: var(--trans);
+}
+.popular-item .rating{
+     justify-content: flex-start;
+     margin: 0.7rem 0;
+     font-size: 0.9rem;
+     opacity: 0.8;
+     padding: 0;
+}
+.popular-item:hover div{
+    background-color: #fff;
+    color: #000;
+    bottom: 0;
+    opacity: 0.95;
+}

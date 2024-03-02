@@ -46,13 +46,16 @@
     align-items: flex-start;
  }
 
- .gallery-row{
+ .gallery-row, .popular-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
  }
  .gallery-item{
     margin: 0;
+ }
+ .popular-row{
+    gap: 0;
  }
 } 
 @media screen and (min-width: 992px) {
@@ -100,13 +103,16 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
      }
+     .popular-row{
+        grid-template-columns: repeat(3, 1fr);
+     }
 }
 
 @media screen and (min-width: 1200px) {
     .test-row, .gallery-row{
         grid-template-columns: repeat(3, 1fr);
     }
-    .footer-row{
+    .footer-row, .popular-row{
         grid-template-columns: repeat(4, 1fr;);
     }
 }
