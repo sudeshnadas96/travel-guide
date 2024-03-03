@@ -46,7 +46,7 @@
     align-items: flex-start;
  }
 
- .gallery-row, .popular-row{
+ .gallery-row, .popular-row, .blog-row{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -103,7 +103,7 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 2rem;
      }
-     .popular-row{
+     .popular-row, .blog-row{
         grid-template-columns: repeat(3, 1fr);
      }
 }
